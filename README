@@ -1,0 +1,37 @@
+###!!!!!!It is complete Bull that this is an issue!!!!!!
+
+#The clunky solution for me was a powershell script.
+#First open a text editor such as Notepad and paste in the text from the .ps1 script in this repository.
+#Save the file as a .ps1 file.  I called mine SetDefaultAudio.ps1
+
+##Create a Task to Run the Fix.
+#Open Task Scheduler. 
+#Windows Key + Press Enter, the Run Box displays. Type: taskschd. msc and press enter
+
+#Task Scheduler Create Task. In the right Actions pane click "Create Task..."
+#General Tab
+#    Name: Run FixBsSteelSeriesJank Script
+#    Description: A powershell script to fix the SteelSeries JANK!
+#    Security options: 
+#        Run only when user is logged on
+#        Run with highest privileges set to true (Check)
+#    Configure for: Windows 10 (select in the picklist)
+
+#Triggers Tab 
+#Click New 
+#Begin the task: At log on
+#Settings: Any User
+#Delay task for: 30 seconds or 1 minute depending on your pc.
+#Enabled set to true (checked)
+
+#Actions Tab
+#Click New...
+#Edit Action Window
+#Action: Start a Program
+#Settings
+#Program/Script: Powershell
+#Add arguments (Optional): -WindowStyle Hidden -NonInteractive -ExecutionPolicy Bypass -File FILELOCATIONHERE
+
+###i.e. -WindowStyle Hidden -NonInteractive -ExecutionPolicy Bypass -File C:\Users\megalithe\OneDrive\Documents\FixSteelSeriesSonarDefaultAudio.ps1
+
+#Click OK
