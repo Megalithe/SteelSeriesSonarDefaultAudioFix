@@ -13,7 +13,8 @@
 #    Name: Run FixBsSteelSeriesJank Script
 #    Description: A powershell script to fix the SteelSeries JANK!
 #    Security options: 
-#        Run only when user is logged on
+#        Run whether user is logged on or not
+#        Do not store password. The task will only have access to local computer resources. Set to true (checked)
 #        Run with highest privileges set to true (Check)
 #    Configure for: Windows 10 (select in the picklist)
 
