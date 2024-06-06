@@ -10,7 +10,7 @@
 
 #Task Scheduler Create Task. In the right Actions pane click "Create Task..."
 #General Tab
-#    Name: Run FixBsSteelSeriesJank Script
+#    Name: Run SetDefaultAudio.ps1 Script
 #    Description: A powershell script to fix the SteelSeries JANK!
 #    Security options: 
 #        Run whether user is logged on or not
