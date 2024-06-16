@@ -33,6 +33,6 @@
 #Program/Script: Powershell
 #Add arguments (Optional): -WindowStyle Hidden -NonInteractive -ExecutionPolicy Bypass -File FILELOCATIONHERE
 
-###i.e. -WindowStyle Hidden -NonInteractive -ExecutionPolicy Bypass -File C:\Users\megalithe\OneDrive\Documents\FixSteelSeriesSonarDefaultAudio.ps1
+###i.e. -WindowStyle Hidden -NonInteractive -ExecutionPolicy Bypass -File C:\Users\megalithe\OneDrive\Documents\SetDefaultAudio.ps1
 
 #Click OK
