@@ -24,4 +24,5 @@ set-audiodevice -index $index
 # 1. Confirm you have powershell installed
 # 2. Ensure Powershell is enabled: Turn Windows Features On / Off
 # 3. Run the following command in Powershell: Get-ExecutionPolicy if it says Restricted it means the script wont run. you need to run the following set-executionpolicy RemoteSigned
+# 4. Due to system performance and applications running at startup you may need to adjust the delays cited in the readme. 
 ## For security reasons use RemoteSigned instead of Unrestricted as it does not require locally written scripts to be signed. 
