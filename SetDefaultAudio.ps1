@@ -6,13 +6,16 @@
 
 # Then run the following command to view the Names & Ids of the audio sources
 #get-audiodevice -list
-# Replace the Number below with your desired default audio device. In my case it was #5.
 
-# Run
-$V = Get-audiodevice -playback
-if ($V.Name.StartsWith("SteelSeries Sonar")) 
-    {set-audiodevice -index 5} else 
-    {set-audiodevice -index 5} 
+# Use the output above to determine your preferred device and set it below.
+$default = "Speakers (4- SteelSeries Arena 7)"
+# Note if you have variable preferences add an if statement here to prioritize which device over the other
+
+# Run the command to get audio devices and filter for the specific device, then select only the Index property
+$index = (Get-AudioDevice -List | Where-Object { $_.Name -eq $default }).Index
+
+# Output the Index and set the default audio for the system
+set-audiodevice -index $index
 
 #timeout /t -1 #Remove # for Debugging
 
