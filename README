@@ -6,7 +6,7 @@
 
 ##Create a Task to Run the Fix.
 #Open Task Scheduler. 
-#Windows Key + r and then Press Enter, the Run Box displays. Type: taskschd. msc and press enter
+#Windows Key + r and then Press Enter, the Run Box displays. Type: taskschd.msc and press enter
 
 #Task Scheduler Create Task. In the right Actions pane click "Create Task..."
 #General Tab
