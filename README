@@ -1,8 +1,7 @@
 ###!!!!!!It is complete Bull that this is an issue!!!!!!
 
 #The clunky solution for me was a powershell script.
-#First open a text editor such as Notepad and paste in the text from the .ps1 script in this repository.
-#Save the file as a .ps1 file.  I called mine SetDefaultAudio.ps1
+#Download SetDefaultAudio.ps1
 
 ##Create a Task to Run the Fix.
 #Open Task Scheduler. 
